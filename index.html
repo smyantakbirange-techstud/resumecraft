@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Create a clean, professional resume in minutes with ResumeCraft's free resume builder.">
+  <title>ResumeCraft — Build your next opportunity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ResumeCraft home"><span class="brand-mark">R</span><span>Resume<span class="brand-light">Craft</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#builder">Builder</a><a href="#templates">Templates</a><a href="#tips">Resume tips</a>
+    </nav>
+    <button class="button button-dark top-cta" id="topStart">Build my resume <span aria-hidden="true">↗</span></button>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Your skills deserve<br> a <span class="gradient-text">great resume.</span></h1>
+        <p class="hero-description">Create a polished, job-ready resume in minutes. Simple tools, clean templates, and a result you can be proud to send.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="heroStart">Create my resume <span aria-hidden="true">→</span></button>
+          <a class="text-link" href="#templates">Explore templates <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="trust-row">
+          <div class="avatar-stack" aria-hidden="true"><span>AK</span><span>SP</span><span>RM</span></div>
+          <div><strong>Made for students & professionals</strong><small>Freshers · Internships · Experienced roles</small></div>
+        </div>
+        <div class="hero-points"><span>✓ Free to use</span><span>✓ PDF export</span><span>✓ No account needed</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Resume preview illustration">
+        <div class="floating-note note-top"><span class="note-icon">✦</span><span><strong>Ready for your next role</strong><small>Make a confident first impression</small></span></div>
+        <div class="resume-sheet hero-sheet">
+          <div class="resume-topline"></div>
+          <div class="mini-name">ALEX MORGAN</div>
+          <div class="mini-role">PRODUCT DESIGNER</div>
+          <div class="mini-contact">alex.morgan@email.com&nbsp; · &nbsp;Mumbai, India</div>
+          <div class="mini-rule"></div>
+          <div class="mini-heading">PROFILE</div>
+          <div class="mini-lines"><i></i><i></i><i class="short"></i></div>
+          <div class="mini-heading">EXPERIENCE</div>
+          <div class="mini-job"><b>Product Design Intern</b><small>Studio North · 2024 — 2025</small></div>
+          <div class="mini-lines"><i></i><i></i><i class="short"></i></div>
+          <div class="mini-heading">EDUCATION</div>
+          <div class="mini-job"><b>Bachelor of Design</b><small>University of Mumbai · 2021 — 2025</small></div>
+          <div class="mini-heading">SKILLS</div>
+          <div class="mini-chips"><span>Figma</span><span>Research</span><span>Prototyping</span></div>
+        </div>
+        <div class="floating-note note-bottom"><span class="download-symbol">↓</span><span><strong>PDF-ready</strong><small>Clean and easy to share</small></span></div>
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="benefits-strip" aria-label="Benefits">
+      <div><span class="benefit-icon">✦</span><strong>Professional layouts</strong><small>Thoughtfully designed</small></div>
+      <div><span class="benefit-icon">⌘</span><strong>Easy to customize</strong><small>Your story, your way</small></div>
+      <div><span class="benefit-icon">↧</span><strong>Download as PDF</strong><small>Ready to send</small></div>
+      <div><span class="benefit-icon">♡</span><strong>Privacy first</strong><small>Details stay in your browser</small></div>
+    </section>
+
+    <section class="builder-section section-wrap" id="builder">
+      <div class="section-heading">
+        <div class="eyebrow">THE RESUME BUILDER</div>
+        <h2>Build your resume, <span class="gradient-text">your way.</span></h2>
+        <p>Fill in your details and watch your resume take shape. You can edit everything before downloading.</p>
+      </div>
+      <div class="builder-layout">
+        <div class="editor-panel">
+          <div class="editor-header"><div><span class="step-badge">01</span><strong>Your details</strong></div><span class="autosave"><i></i> Saved in this session</span></div>
+          <div class="form-content">
+            <div class="form-section-title">PERSONAL INFORMATION</div>
+            <div class="field-grid">
+              <label>Full name<input id="fullName" type="text" placeholder="e.g. Aditi Sharma" value="Aditi Sharma"></label>
+              <label>Professional title<input id="jobTitle" type="text" placeholder="e.g. Computer Science Student" value="Computer Science Student"></label>
+              <label>Email address<input id="email" type="email" placeholder="you@example.com" value="aditi.sharma@example.com"></label>
+              <label>Phone number<input id="phone" type="tel" placeholder="+91 98765 43210" value="+91 98765 43210"></label>
+              <label>Location<input id="location" type="text" placeholder="City, Country" value="Nashik, India"></label>
+              <label>LinkedIn / Portfolio<input id="website" type="text" placeholder="linkedin.com/in/yourname" value="linkedin.com/in/aditisharma"></label>
+            </div>
+            <label class="full-field">Professional summary<textarea id="summary" rows="4" placeholder="Write 2–3 lines about your strengths and goals.">Motivated computer science student with a strong interest in web development and problem-solving. Eager to apply technical skills, learn from experienced teams, and contribute to meaningful projects.</textarea></label>
+            <div class="form-section-title section-title-spaced">EDUCATION</div>
+            <div class="field-grid">
+              <label>Degree / qualification<input id="degree" type="text" placeholder="e.g. B.Tech Computer Science" value="B.E. Computer Engineering"></label>
+              <label>College / institution<input id="college" type="text" placeholder="College name" value="North Valley Institute of Technology"></label>
+              <label>Graduation year<input id="gradYear" type="text" placeholder="e.g. 2027" value="2027"></label>
+              <label>CGPA / percentage<input id="grade" type="text" placeholder="e.g. 8.4 CGPA" value="8.4 CGPA"></label>
+            </div>
+            <div class="form-section-title section-title-spaced">SKILLS & PROJECTS</div>
+            <label class="full-field">Skills <span class="label-hint">Separate each skill with a comma</span><input id="skills" type="text" value="HTML, CSS, JavaScript, Java, Communication, Problem-solving" placeholder="HTML, teamwork, Excel..."></label>
+            <label class="full-field">Project or experience<textarea id="experience" rows="4" placeholder="Project name — what you built and the result.">Student Utility Hub — Built a responsive website with useful student tools and a clean, accessible interface. Practiced HTML, CSS, JavaScript, and responsive design.</textarea></label>
+            <label class="full-field">Certifications / achievements <span class="label-hint">Optional</span><textarea id="certifications" rows="2" placeholder="Courses, awards, volunteering...">Web Development Fundamentals · College Technical Club Member</textarea></label>
+            <div class="editor-actions"><button class="button button-outline" id="resetForm">Reset sample</button><button class="button button-primary" id="refreshPreview">Update preview <span>→</span></button></div>
+            <p class="privacy-note"><span>♢</span> Your details are processed locally in this page and are not uploaded to a server by this demo.</p>
+          </div>
+        </div>
+        <div class="preview-panel">
+          <div class="preview-toolbar"><div><span class="live-dot"></span><strong>Live preview</strong></div><div class="preview-tools"><button id="templateToggle" class="small-tool" title="Switch template">Change style</button><button id="printResume" class="download-button"><span>↓</span> Download PDF</button></div></div>
+          <div class="resume-preview-wrap">
+            <article class="resume-document" id="resumeDocument">
+              <div class="doc-header">
+                <h2 id="previewName">Aditi Sharma</h2>
+                <div class="doc-title" id="previewTitle">Computer Science Student</div>
+                <div class="doc-contact"><span id="previewEmail">aditi.sharma@example.com</span><span id="previewPhone">+91 98765 43210</span><span id="previewLocation">Nashik, India</span></div>
+                <div class="doc-link" id="previewWebsite">linkedin.com/in/aditisharma</div>
+              </div>
+              <section class="doc-section" id="summarySection"><h3>PROFILE</h3><p id="previewSummary">Motivated computer science student with a strong interest in web development and problem-solving. Eager to apply technical skills, learn from experienced teams, and contribute to meaningful projects.</p></section>
+              <section class="doc-section"><h3>EDUCATION</h3><div class="doc-entry"><div class="doc-entry-main"><strong id="previewDegree">B.E. Computer Engineering</strong><span id="previewCollege">North Valley Institute of Technology</span></div><div class="doc-entry-side"><strong id="previewYear">2027</strong><span id="previewGrade">8.4 CGPA</span></div></div></section>
+              <section class="doc-section"><h3>PROJECTS & EXPERIENCE</h3><p id="previewExperience">Student Utility Hub — Built a responsive website with useful student tools and a clean, accessible interface. Practiced HTML, CSS, JavaScript, and responsive design.</p></section>
+              <section class="doc-section"><h3>SKILLS</h3><div id="previewSkills" class="doc-skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Communication</span><span>Problem-solving</span></div></section>
+              <section class="doc-section" id="certSection"><h3>CERTIFICATIONS & ACHIEVEMENTS</h3><p id="previewCertifications">Web Development Fundamentals · College Technical Club Member</p></section>
+            </article>
+          </div>
+          <div class="preview-footer"><span>Designed for clarity and readability</span><span>ResumeCraft <b>✦</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="templates-section" id="templates">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div class="eyebrow">MADE FOR YOUR NEXT MOVE</div>
+          <h2>A style that feels <span class="gradient-text">like you.</span></h2>
+          <p>Start with a clean layout. Your experience and skills are what make it stand out.</p>
+        </div>
+        <div class="template-grid">
+          <button class="template-card selected" data-template="classic"><div class="template-preview template-classic"><div class="tp-name"></div><div class="tp-line"></div><div class="tp-section"></div><div class="tp-lines"></div><div class="tp-section"></div><div class="tp-lines short-lines"></div></div><div class="template-card-bottom"><span><strong>Classic</strong><small>Clean and timeless</small></span><span class="template-check">✓</span></div></button>
+          <button class="template-card" data-template="modern"><div class="template-preview template-modern"><div class="tp-sidebar"><i></i><i></i><i></i></div><div class="tp-main"><div class="tp-name"></div><div class="tp-line"></div><div class="tp-section"></div><div class="tp-lines"></div><div class="tp-section"></div><div class="tp-lines short-lines"></div></div></div><div class="template-card-bottom"><span><strong>Modern</strong><small>Distinctive and fresh</small></span><span class="template-check">✓</span></div></button>
+          <button class="template-card" data-template="minimal"><div class="template-preview template-minimal"><div class="tp-name"></div><div class="tp-line"></div><div class="tp-section"></div><div class="tp-lines"></div><div class="tp-section"></div><div class="tp-lines short-lines"></div></div><div class="template-card-bottom"><span><strong>Minimal</strong><small>Simple and focused</small></span><span class="template-check">✓</span></div></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-section section-wrap" id="tips">
+      <div class="tips-copy"><div class="eyebrow">A FEW SMART TIPS</div><h2>Small details.<br><span class="gradient-text">Big difference.</span></h2><p>A good resume is clear, relevant, and honest. Keep the reader's time in mind.</p></div>
+      <div class="tips-list">
+        <div class="tip-item"><span>01</span><div><strong>Keep it relevant</strong><p>Highlight skills and projects that match the role you're applying for.</p></div></div>
+        <div class="tip-item"><span>02</span><div><strong>Show what you did</strong><p>Use clear action words and describe your contribution to each project.</p></div></div>
+        <div class="tip-item"><span>03</span><div><strong>Make it easy to scan</strong><p>Use consistent headings, readable text, and a simple layout.</p></div></div>
+        <div class="tip-item"><span>04</span><div><strong>Check before sending</strong><p>Verify contact details, spelling, dates, and links before you apply.</p></div></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="cta-spark">✦</div><h2>Your next opportunity<br>starts with one page.</h2><p>Make your experience easy to see. Create a resume you feel good about.</p><button class="button button-light" id="bottomStart">Create my resume <span>→</span></button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#"><span class="brand-mark">R</span><span>Resume<span class="brand-light">Craft</span></span></a>
+    <p>Made to help your next chapter begin.</p>
+    <span class="footer-note">Free resume builder · Demo version</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
