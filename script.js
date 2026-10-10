@@ -51,9 +51,9 @@ Object.keys(fields).concat('skills').forEach(id => {
 });
 $('refreshPreview').addEventListener('click', updatePreview);
 $('resetForm').addEventListener('click', () => {
-  Object.entries(sampleValues).forEach(([id, value]) => $(id).value = value);
+  Object.keys(fields).concat('skills').forEach(id => $(id).value = '');
   updatePreview();
-  showToast('Sample details restored');
+  showToast('All details cleared');
 });
 $('printResume').addEventListener('click', () => {
   updatePreview();
